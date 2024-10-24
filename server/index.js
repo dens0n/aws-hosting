@@ -8,13 +8,8 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-// Routes
-app.get("/", (req, res) => {
-    res.send("Hello World!");
-});
-
 // New endpoint
-app.get("/data", (req, res) => {
+app.get("/", (req, res) => {
     res.json({ message: "This is the data from the server" });
 });
 
