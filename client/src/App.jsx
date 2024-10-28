@@ -5,7 +5,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:3000");
+      const response = await fetch("http://http://13.60.105.223:3000/");
 
       const result = await response.json();
 
